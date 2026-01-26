@@ -40,6 +40,40 @@ This application supports role-based access for **Admin** and **Teacher** users.
 
 ---
 
+## 🌍 Live Deployment (Render)
+
+The project is deployed on **Render** using separate services for frontend and backend.
+
+### 🔹 Frontend (Streamlit)
+👉 **Live App URL:**  
+https://student-attendance-tracker-frontend.onrender.com  
+
+### 🔹 Backend (FastAPI)
+👉 **API Base URL:**  
+https://student-attendance-tracker-vimh.onrender.com  
+
+👉 **Swagger API Docs:**  
+https://student-attendance-tracker-vimh.onrender.com/docs  
+
+---
+
+## 🛠️ Installation Instructions (Local Setup)
+
+### Prerequisites
+- Python 3.10+
+- Docker
+- Docker Compose
+- Git
+
+---
+
+## 🐳 Run Using Docker (Local)
+
+### Step 1: Clone Repository
+```bash
+git clone <your-repository-url>
+cd Student_Attendance_Tracker
+
 ## 📁 Project Structure
 
 Student_Attendance_Tracker/
