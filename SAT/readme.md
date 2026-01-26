@@ -62,16 +62,9 @@ Make sure the following tools are installed on your system:
 - **Git**  
   👉 https://git-scm.com/downloads
 
-Verify installation:
-```bash
-python --version
-docker --version
-docker compose version
-git --version
-
 ---
 
-## 📁 Project Structure
+### 📁 Project Structure
 
 Student_Attendance_Tracker/
 - backend/
@@ -82,7 +75,7 @@ Student_Attendance_Tracker/
 
 ---
 
-## 🐳 Run Locally with Docker
+## 🛠️ Installation Instructions (Local Setup)
 
 ### Step 1: Clone Repository
 ```bash
