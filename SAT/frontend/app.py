@@ -5,6 +5,7 @@ import os
 
 
 BASE_URL = os.getenv("BACKEND_URL","http://127.0.0.1:8000")
+st.write("BASE_URL =", BASE_URL)
 st.set_page_config(page_title= "Student Attendance Tracker",page_icon="📊")
 
 # SESSION STATE 
