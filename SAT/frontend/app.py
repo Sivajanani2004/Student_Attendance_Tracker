@@ -8,6 +8,7 @@ BASE_URL = os.getenv("BACKEND_URL","http://127.0.0.1:8000")
 st.write("BASE_URL =", BASE_URL)
 st.set_page_config(page_title= "Student Attendance Tracker",page_icon="📊")
 
+
 # SESSION STATE 
 if "page" not in st.session_state:
     st.session_state.page = "login"
@@ -31,6 +32,12 @@ def check_password_strength(password: str):
     
     return "Strong", "Strong password"
 
+# Wakeup backend
+def wake_backend():
+    try:
+        requests.get(f"{BASE_URL}/docs", timeout=10)
+    except:
+        pass
 
 # SIGNUP PAGE
 
@@ -96,7 +103,7 @@ def login_page():
 
     if login_clicked:
         payload = {"email": email, "password": password}
-        response = requests.post(f"{BASE_URL}/login", json=payload)
+        response = requests.post(f"{BASE_URL}/login", json=payload,timeout=15)
 
         if response.status_code == 200:
             data = response.json()
