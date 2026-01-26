@@ -40,61 +40,49 @@ This application supports role-based access for **Admin** and **Teacher** users.
 
 ---
 
-## 🌍 Live Deployment (Render)
-
-The project is deployed on **Render** using separate services for frontend and backend.
-
-### 🔹 Frontend (Streamlit)
-👉 **Live App URL:**  
-https://student-attendance-tracker-frontend.onrender.com  
-
-### 🔹 Backend (FastAPI)
-👉 **API Base URL:**  
-https://student-attendance-tracker-vimh.onrender.com  
-
-👉 **Swagger API Docs:**  
-https://student-attendance-tracker-vimh.onrender.com/docs  
-
----
-
 ## 🛠️ Installation Instructions (Local Setup)
 
-### Prerequisites
-- Python 3.10+
-- Docker
-- Docker Compose
-- Git
+Follow the steps below to run the project on your local machine.
 
 ---
 
-## 🐳 Run Using Docker (Local)
+### ✅ Prerequisites
 
-### Step 1: Clone Repository
+Make sure the following tools are installed on your system:
+
+- **Python 3.10 or higher**  
+  👉 https://www.python.org/downloads/
+
+- **Docker**  
+  👉 https://docs.docker.com/get-docker/
+
+- **Docker Compose**  
+  (Included with Docker Desktop)
+
+- **Git**  
+  👉 https://git-scm.com/downloads
+
+Verify installation:
 ```bash
-git clone <your-repository-url>
-cd Student_Attendance_Tracker
+python --version
+docker --version
+docker compose version
+git --version
+
+---
 
 ## 📁 Project Structure
 
 Student_Attendance_Tracker/
 - backend/
 - frontend/
+- Screenshots
 - docker-compose.yml
 - README.md
 
 ---
 
-## 🛠️ Installation Instructions
-
-### Prerequisites
-- Python 3.10+
-- Docker
-- Docker Compose
-- Git
-
----
-
-## 🐳 Run Using Docker
+## 🐳 Run Locally with Docker
 
 ### Step 1: Clone Repository
 ```bash
@@ -116,13 +104,26 @@ docker compose up --build
 ```bash
 docker compose down
 ```
+---
+
+## 🌍 Live Deployment (Render)
+
+The project is deployed on **Render** using separate services for frontend and backend.
+
+### 🔹 Frontend (Streamlit)
+👉 **Live App URL:**  
+https://student-attendance-tracker-frontend.onrender.com  
+
+### 🔹 Backend (FastAPI)
+👉 **API Base URL:**  
+https://student-attendance-tracker-vimh.onrender.com  
+
+👉 **Swagger API Docs:**  
+https://student-attendance-tracker-vimh.onrender.com/docs  
 
 ---
 
 ## 👩‍💻 Author
 Siva Janani R
-
 ---
 
-## 📄 License
-This project is for educational purposes only.
