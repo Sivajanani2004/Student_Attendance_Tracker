@@ -1,8 +1,10 @@
 import streamlit as st
 import requests,re
 import pandas as pd
+import os
 
-BASE_URL = "https://student-attendance-tracker-vimh.onrender.com"
+
+BASE_URL = os.getenv("BACKEND_URL","http://127.0.0.1:8000")
 st.set_page_config(page_title= "Student Attendance Tracker",page_icon="📊")
 
 # SESSION STATE 
