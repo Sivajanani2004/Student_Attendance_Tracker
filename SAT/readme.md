@@ -105,7 +105,7 @@ The project is deployed on **Render** using separate services for frontend and b
 
 ### 🔹 Frontend (Streamlit)
 👉 **Live App URL:**  
-https://student-attendance-tracker-frontend.onrender.com  
+https://student-attendance-tracker-frontend.onrender.com
 
 ### 🔹 Backend (FastAPI)
 👉 **API Base URL:**  
