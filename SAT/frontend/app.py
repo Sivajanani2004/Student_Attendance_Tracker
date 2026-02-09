@@ -46,7 +46,7 @@ def wake_backend():
     except:
         pass
 
-    
+
 # SIGNUP PAGE
 
 def signup_page():
@@ -428,3 +428,14 @@ def dashboard():
                 st.session_state.clear()
                 st.rerun()
 
+# MAIN
+
+if st.session_state.page == "login":
+    login_page()
+elif st.session_state.page == "signup":
+    signup_page()
+elif st.session_state.page == "dashboard":
+    dashboard()
+else:
+    st.session_state.page = "login"
+    st.rerun()
