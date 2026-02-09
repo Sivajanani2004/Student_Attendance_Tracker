@@ -7,20 +7,7 @@ import os
 BASE_URL = os.getenv("BACKEND_URL","http://127.0.0.1:8000")
 st.set_page_config(page_title= "Student Attendance Tracker",page_icon="📊")
 
-# Safe JSON
-def safe_json(res):
-    try:
-        return res.json()
-    except ValueError:
-        return {"detail": res.text or "Server error. Please try again later."}
 
- 
-# Wakeup backend
-def wake_backend():
-    try:
-        requests.get(f"{BASE_URL}/docs", timeout=10)
-    except:
-        pass
 
 # SESSION STATE 
 if "page" not in st.session_state:
@@ -45,7 +32,21 @@ def check_password_strength(password: str):
     
     return "Strong", "Strong password"
 
+# Safe JSON
+def safe_json(res):
+    try:
+        return res.json()
+    except ValueError:
+        return {"detail": res.text or "Server error. Please try again later."}
 
+# Wakeup backend
+def wake_backend():
+    try:
+        requests.get(f"{BASE_URL}/docs", timeout=10)
+    except:
+        pass
+
+    
 # SIGNUP PAGE
 
 def signup_page():
